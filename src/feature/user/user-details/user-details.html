@@ -1,1 +1,4 @@
-<div>user details...</div>
+<div>{{vat | percent: '2.2-2'}}</div>
+<!-- <div>{{price | number: ((price.toString()).split('.')[1].length<=2) ? '4.2-2' : '4.2-3' }}</div> -->
+<div>{{price | currency: 'EUR' : 'symbol' : '4.2-3' }}</div>
+<div>{{time | date : 'dd/mm/yyyy hh:mm UTC+3' }}</div>

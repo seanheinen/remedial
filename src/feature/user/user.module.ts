@@ -1,3 +1,4 @@
+import { CommonModule, PercentPipe } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserDetailsComponent } from './user-details/user-details';
@@ -19,6 +20,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)]
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes)],
+    declarations: [UserDetailsComponent]
 })
 export class UserModule { }
