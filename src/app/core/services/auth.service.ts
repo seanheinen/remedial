@@ -6,7 +6,7 @@ import { AccessLevel } from '../models';
 export class AuthService {
 
   hasAccess(_0: AccessLevel): Observable<boolean> {
-    return of(false);
+    return of(true);
   }
 
 }
