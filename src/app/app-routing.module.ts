@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NotFoundComponent } from 'src/feature/not-found/not-found';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  // { path: '', component: HomeComponent }
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forChild(routes)],
 })
 export class AppRoutingModule { }
